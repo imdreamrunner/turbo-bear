@@ -1,3 +1,3 @@
 FROM ubuntu:trusty
-RUN apt-get update && apt-get install -y g++-4.8 \
-            gcc-4.8 python3.4 python2.7 openjdk-6-jdk
+RUN apt-get update && apt-get install --no-install-recommends -y\
+            gcc-4.8 g++-4.8 python2.7-minimal python3.4-minimal
